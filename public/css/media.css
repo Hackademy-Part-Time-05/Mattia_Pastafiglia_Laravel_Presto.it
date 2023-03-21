@@ -1,0 +1,20 @@
+@media (max-width: 991.98px) { 
+    #mainNavbar {
+        background-color: black;
+        position:static;
+    }
+    .navbar .nav-item {
+        padding: 15px 0;
+    }
+    .navbar.thin .nav-item {
+        padding: 0 0;
+    }
+    .navbar-nav .nav-link::before {
+        height: 0;
+    }
+    .info_presto{
+        transform: translate(0,0);
+        left:0;
+        position: relative;
+    }
+ }

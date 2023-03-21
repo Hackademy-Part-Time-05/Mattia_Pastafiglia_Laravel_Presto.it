@@ -1,0 +1,326 @@
+:root{
+    --primary:rgb(107,110,117);
+    --primaryAlpha:rgba(107, 110, 117, 0.351);
+    --text-header:white;
+    --text-header-contrast:black;
+}
+
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.fa-car {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.fa-car:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+} 
+.fa-house,.fa-car-battery,.fa-dollar-sign,.fa-user-group,.social{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.fa-house:hover,.fa-car-battery:hover, .fa-dollar-sign:hover,.fa-user-group:hover{
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+} 
+.text-presto {
+    color: var(--primary);
+}
+
+.bg-presto {
+    background-color: var(--primary);
+}
+.text-alternative-presto {
+    color: var(--text-header-contrast);
+}
+
+.bg-alternative-presto {
+    background-color: var(--text-header-contrast);
+}
+
+.btn-presto {
+    padding: 5px 25px;
+    color: var(--text-header);
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+.btn-presto:hover {
+    background-color: var(--primary);
+}
+
+.navbar .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--text-header);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar.bg-white .nav-link {
+    color: var(--text-header-contrast);
+}
+
+.navbar .nav-item .nav-link-icon-presto {
+    color: var(--primary);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--primary);
+}
+
+.nav-item {
+    position: relative;
+    padding: 20px 0;
+    transition: all linear 300ms;
+}
+
+.navbar .navbar-brand {
+    color: var(--text-header);
+}
+
+.navbar.bg-white .navbar-brand {
+    color: var(--primary);
+}
+
+#mainNavbar {
+    border-color: rgb(171, 171, 171);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* .navbar-nav .nav-link.active::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 70%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+} */
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+.navbar-nav .nav-link::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--primary);
+    transform: translateX(-50%);
+    transition: all linear 250ms;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 70%;
+}
+
+.navbar-nav .nav-link.nav-link-icon-presto::before{
+    width: 0;
+}
+
+.navbar.thin .nav-item {
+    padding: 15px 0;
+}
+ /* hamburger button */  
+ .navbar-toggler span {
+    display: block;
+    background-color:var(--text-header);
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+  }
+  
+  
+  
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+  }
+/* Header */
+  .overlay::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primaryAlpha);
+  }
+
+  .btn-big-presto {
+    padding: 10px 30px;
+    color: var(--text-header);
+    background-color: var(--primaryAlpha);
+    border-radius: 2px;
+}
+.btn-big-presto:hover {
+    background-color: var(--primary);
+}
+.btn-big-white-presto {
+    padding: 10px 30px;
+    color: var(--text-header);
+    background-color: var(--primaryAlpha);
+    border-radius: 2px;
+}
+.btn-big-white-presto:hover {
+    color: var(--text-header-contrast);
+    background-color: var(--text-header);
+}
+/*InfoSection*/
+.info_presto{
+    transform: translate(-50%,-50% );
+    left:50%;
+    position: relative;
+}
+
+
+
+/*First Section*/
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: var(--primary);
+}
+
+
+/*Footer */
+.btn-alternative-presto {
+    padding: 5px 25px;
+    color: var(--text-header);
+    background-color: var(--text-header-contrast);
+    border-radius: 2px;
+}
+
+.btn-alternative-presto:hover {
+    background-color: var(--text-header-contrast);
+    color: var(--text-header);
+}
+
+
+
+#mainFooter .nav .nav-link{
+    transition: transform ease-out 300ms;
+   
+}
+#mainFooter .nav .nav-link:hover{
+    transform: translate(10px);
+   
+}
+
+.social{
+    background-color: var(--primary);
+}
+
+.nav-link-footer{
+    color: white;
+}
+
+.nav-link-footer:hover{
+    color: black;
+}
+
+.footer-effect{
+    position: relative;
+    padding: 15px;
+}
+.footer-effect::after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+.footer-effect::before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 7px;
+    height: 5px;
+    background-color: white;
+    border-radius: 2px;
+    z-index: 1;
+    animation-name: dot;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes dot{
+    from{
+        left:0;
+    }
+    to{
+        left: 40%;
+    }
+}
